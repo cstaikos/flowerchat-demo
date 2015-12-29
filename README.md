@@ -8,5 +8,5 @@ This project supports:
 
 
 ### Installation
-- Run `npm init` to install dependencies 
+- Run `npm install` to install dependencies 
 - Run `gulp` from directory to start express server + browser-sync

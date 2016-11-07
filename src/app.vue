@@ -6,33 +6,33 @@
 
 <template>
 <div class="controls">
-    <input v-model="smallRadius" type="range" name="smallRadiusInputName" id="smallRadiusInputId" value="200" min="100" max="1000" oninput="smallRadiusOutputId.value = smallRadiusInputId.value" />
+    <input v-model="smallRadius" type="range" name="smallRadiusInputName" id="smallRadiusInputId" value="125" min="100" max="1000" oninput="smallRadiusOutputId.value = smallRadiusInputId.value" />
   <br/>
-  Small Circle Radius (flower head): <output name="smallRadiusOutputName" id="smallRadiusOutputId">{{small-radius}}</output>
-  <br/>
-  <br/>
-
-  <input v-model="largeRadius" type="range" name="largeRadiusInputName" id="largeRadiusInputId" value="300" min="200" max="2000" oninput="largeRadiusOutputId.value = largeRadiusInputId.value" />
-  <br/>
-  Large Circle Radius (projected control points): <output name="largeRadiusOutputName" id="largeRadiusOutputId">{{large-radius}}</output>
+  Small Circle Radius (flower head): <output name="smallRadiusOutputName" id="smallRadiusOutputId">{{smallRadius}}</output>
   <br/>
   <br/>
 
-  <input v-model="centerX" type="range" name="centerXInputName" id="centerXInputId" value="500" min="0" max="2000" oninput="centerXOutputId.value = centerXInputId.value" />
+  <input v-model="largeRadius" type="range" name="largeRadiusInputName" id="largeRadiusInputId" value="250" min="200" max="2000" oninput="largeRadiusOutputId.value = largeRadiusInputId.value" />
   <br/>
-  Center x: <output name="centerXOutputName" id="centerXOutputId">{{center-x}}</output>
+  Large Circle Radius (projected control points): <output name="largeRadiusOutputName" id="largeRadiusOutputId">{{largeRadius}}</output>
+  <br/>
+  <br/>
+
+  <input v-model="centerX" type="range" name="centerXInputName" id="centerXInputId" value="675" min="0" max="2000" oninput="centerXOutputId.value = centerXInputId.value" />
+  <br/>
+  Center x: <output name="centerXOutputName" id="centerXOutputId">{{centerX}}</output>
   <br/>
   <br/>
 
   <input v-model="centerY" type="range" name="centerYInputName" id="centerYInputId" value="350" min="0" max="2000" oninput="centerYOutputId.value = centerYInputId.value" />
   <br/>
-  Center y: <output name="centerYOutputName" id="centerYOutputId">{{center-y}}</output>
+  Center y: <output name="centerYOutputName" id="centerYOutputId">{{centerY}}</output>
   <br/>
   <br/>
 
-  <input v-model="numPetals" type="range" name="numPetalsInputName" id="numPetalsInputId" value="5" min="0" max="20" oninput="numPetalsOutputId.value = numPetalsInputId.value" />
+  <input v-model="numPetals" type="range" name="numPetalsInputName" id="numPetalsInputId" value="10" min="0" max="20" oninput="numPetalsOutputId.value = numPetalsInputId.value" />
   <br/>
-  Number of petals: <output name="numPetalsOutputName" id="numPetalsOutputId">{{num-petals}}</output>
+  Number of petals: <output name="numPetalsOutputName" id="numPetalsOutputId">{{numPetals}}</output>
   <br/>
   <br/>
 
@@ -51,15 +51,6 @@
   import Flower from './flower.vue'
 
   module.exports = {
-  data: function() {
-    return {
-      "smallRadius": "199",
-      "largeRadius": "1",
-      "centerX": "1",
-      "centerY": "1",
-      "numPetals": "1"
-    };
-  },
   components: { Flower }
 }
 

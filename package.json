@@ -15,7 +15,7 @@
     "express",
     "express"
   ],
-  "author": "mohamed abusaid",
+  "author": "Chris Staikos",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.3.4",

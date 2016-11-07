@@ -10,7 +10,7 @@ app.set('views', __dirname + '/public');
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
-	res.render('index', {});
+  res.render('index', {});
 });
 
 app.listen(9090);

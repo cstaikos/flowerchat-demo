@@ -11,12 +11,12 @@
   Small Circle Radius (flower head): <output name="smallRadiusOutputName" id="smallRadiusOutputId">{{smallRadius}}</output>
   <br/>
   <br/>
-
-  <input v-model="largeRadius" type="range" name="largeRadiusInputName" id="largeRadiusInputId" value="250" min="200" max="2000" oninput="largeRadiusOutputId.value = largeRadiusInputId.value" />
+<!--
+  <input v-model="largeRadius" type="range" name="largeRadiusInputName" id="largeRadiusInputId" value="350" min="200" max="2000" oninput="largeRadiusOutputId.value = largeRadiusInputId.value" />
   <br/>
   Large Circle Radius (projected control points): <output name="largeRadiusOutputName" id="largeRadiusOutputId">{{largeRadius}}</output>
   <br/>
-  <br/>
+  <br/> -->
 
   <input v-model="centerX" type="range" name="centerXInputName" id="centerXInputId" value="675" min="0" max="2000" oninput="centerXOutputId.value = centerXInputId.value" />
   <br/>
@@ -30,7 +30,7 @@
   <br/>
   <br/>
 
-  <input v-model="numPetals" type="range" name="numPetalsInputName" id="numPetalsInputId" value="10" min="0" max="20" oninput="numPetalsOutputId.value = numPetalsInputId.value" />
+  <input v-model="numPetals" type="range" name="numPetalsInputName" id="numPetalsInputId" value="10" min="0" max="50" oninput="numPetalsOutputId.value = numPetalsInputId.value" />
   <br/>
   Number of petals: <output name="numPetalsOutputName" id="numPetalsOutputId">{{numPetals}}</output>
   <br/>
